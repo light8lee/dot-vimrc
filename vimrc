@@ -1,4 +1,5 @@
 source ~/.vim/bundles.vim
+let delimitMate_matchpairs = "(:),[:],{:}"
 
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
@@ -14,7 +15,7 @@ syntax on
 "--------
 " color scheme
 set background=dark
-color solarized
+color koehler
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
@@ -34,7 +35,7 @@ set nofoldenable                                                  " disable fold
 set confirm                                                       " prompt when existing from an unsaved file
 set backspace=indent,eol,start                                    " More powerful backspacing
 set t_Co=256                                                      " Explicitly tell vim that the terminal has 256 colors "
-set mouse=a                                                       " use mouse in all modes
+" set mouse=a                                                       " use mouse in all modes
 set report=0                                                      " always report number of lines changed                "
 set nowrap                                                        " dont wrap lines
 set scrolloff=5                                                   " 5 lines above/below cursor when scrolling
@@ -237,7 +238,7 @@ vmap <D-[> <gv
 vmap <D-]> >gv
 
 " eggcache vim
-nnoremap ; :
+" nnoremap ; :
 :command W w
 :command WQ wq
 :command Wq wq
